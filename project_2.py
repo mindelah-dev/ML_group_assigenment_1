@@ -147,3 +147,25 @@ def fault_score(metric, y_true, y_pred):
 
 
 results = {}
+
+for name, model in models.items():
+    print("\n" + "=" * 65)
+    print(name.upper())
+    print("=" * 65)
+
+    model.fit(X_train, y_train)
+    y_pred = model.predict(X_test)
+
+    results[name] = {
+        "Accuracy": accuracy_score(y_test, y_pred),
+        "Fault Precision": fault_score(precision_score, y_test, y_pred),
+        "Fault Recall": fault_score(recall_score, y_test, y_pred),
+        "Macro F1": f1_score(y_test, y_pred, labels=CLASS_NAMES,
+                             average="macro", zero_division=0),
+    }
+    for metric, value in results[name].items():
+        print(f"{metric:16s}: {value:.3f}")
+
+    print("\nClassification report:")
+    print(classification_report(y_test, y_pred, labels=CLASS_NAMES,
+                                target_names=CLASS_NAMES, zero_division=0))
