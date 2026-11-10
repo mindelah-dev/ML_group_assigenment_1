@@ -66,3 +66,8 @@ def create_dataset(records_per_class=100):
                 row[feature] = max(MINIMUMS[feature], rng.normal(mean, sd))
             row["Condition"] = condition
             rows.append(row)
+ data = pd.DataFrame(rows)
+    return data.sample(frac=1, random_state=RANDOM_STATE).reset_index(drop=True)
+
+
+df = create_dataset()
