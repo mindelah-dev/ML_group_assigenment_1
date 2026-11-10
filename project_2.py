@@ -82,3 +82,6 @@ print("\nSaved dataset to pump_condition_dataset.csv")
 # ============================================================
 # PART 2. EXPLORE THE DATA
 # ============================================================
+plt.figure(figsize=(9, 5))
+sns.scatterplot(data=df, x="Vibration_mm_s", y="Temperature_C",
+                hue="Condition", hue_order=CLASS_NAMES, s=65)
