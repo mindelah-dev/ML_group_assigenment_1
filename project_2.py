@@ -54,3 +54,8 @@ MINIMUMS = {
     "Vibration_mm_s": 0.1, "RPM": 500, "Temperature_C": 10,
     "Pressure_bar": 0.1, "Operating_Hours": 0,
 }
+
+def create_dataset(records_per_class=100):
+    """Generate synthetic pump records for the three conditions."""
+    rng = np.random.default_rng(RANDOM_STATE)
+    rows = []
