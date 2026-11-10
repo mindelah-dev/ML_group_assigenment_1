@@ -49,3 +49,4 @@ PROFILES = {
         "Pressure_bar": (3.4, 0.35), "Operating_Hours": (7500, 1000),
     },
 }
+# Smallest physically sensible value for each feature (avoids negative readings).
