@@ -272,3 +272,5 @@ for model_name, model in models.items():
     print(f"Precision: {precision:.3f}")
     print(f"Recall   : {recall:.3f}")
     print(f"F1-score : {f1:.3f}")
+ print("\nCLASSIFICATION REPORT")
+    print(
