@@ -380,3 +380,6 @@ for name, model in models.items():
     else:
         label = "Normal"
  print(f"{name:15s} prediction: {label}")
+============================================================
+# PART 9. FINISH
+# ============================================================
