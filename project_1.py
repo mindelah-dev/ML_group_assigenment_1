@@ -169,6 +169,20 @@ plt.show()
 
 
 
+# ============================================================
+# PART 3. SPLIT DATA INTO TRAINING AND TESTING SETS
+# ============================================================
+# 70% is used for training and 30% for testing.
+# Stratification keeps the class ratio similar in both groups.
+X_train, X_test, y_train, y_test = train_test_split(
+    X,
+    y,
+    test_size=0.30,
+    random_state=42,
+    stratify=y,
+)
+
+
 
 
 
