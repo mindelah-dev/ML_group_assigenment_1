@@ -105,3 +105,4 @@ plt.show()
 
 X = df[FEATURES]
 y = df["Condition"]
+# stratify=y keeps the same Normal/Warning/Fault ratio in both sets.
