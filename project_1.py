@@ -370,3 +370,12 @@ print("\n" + "=" * 65)
 print("NEW MACHINE OBSERVATION")
 print("=" * 65)
 print(new_machine.to_string(index=False))
+print("\nPREDICTIONS FROM THE FIVE ALGORITHMS")
+
+for name, model in models.items():
+    predicted_class = int(model.predict(new_machine)[0])
+
+    if predicted_class == 1:
+        label = "Failure risk"
+    else:
+        label = "Normal"
