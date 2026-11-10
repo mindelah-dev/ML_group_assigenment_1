@@ -242,3 +242,14 @@ for name, model in models.items():
 # ============================================================
 # PART 9. FINAL SUMMARY
 # ============================================================
+
+# Fault recall is the first priority (a missed Fault is the costliest error);
+# macro F1 breaks ties.
+best_model = results_df.sort_values(["Fault Recall", "Macro F1"], ascending=False).index[0]
+
+print("\n" + "=" * 65)
+print("END OF PUMP CONDITION CLASSIFICATION CASE STUDY")
+print("=" * 65)
+print("Best model in this run (Fault recall, then macro F1):", best_model)
+print("These are synthetic classroom data, not a real pump diagnosis.")
+print("Predictions should support, not replace, engineering inspection.")
