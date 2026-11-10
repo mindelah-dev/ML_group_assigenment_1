@@ -341,3 +341,14 @@ for name, model in tree_models.items():
     plt.ylabel("Engineering Feature")
     plt.tight_layout()
     plt.show()
+
+# Draw the trained Decision Tree.
+plt.figure(figsize=(16, 8))
+plot_tree(
+    decision_tree_model,
+    feature_names=feature_cols,
+    class_names=["Normal", "Failure risk"],
+    filled=True,
+    rounded=True,
+    fontsize=9,
+)
