@@ -183,6 +183,25 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 
 
+print("\nTRAINING AND TESTING DATA")
+print(f"Training records: {len(X_train)}")
+print(f"Testing records:  {len(X_test)}")
+
+
+# ============================================================
+# PART 4. DEFINE FIVE MACHINE LEARNING CLASSIFIERS
+# ============================================================
+
+
+# SVM: scaling is important because SVM uses distances.
+svm_model = Pipeline([
+    ("scaler", StandardScaler()),
+    ("classifier", SVC(kernel="rbf", C=1.0, gamma="scale")),
+])
+
+
+
+
 
 
 
