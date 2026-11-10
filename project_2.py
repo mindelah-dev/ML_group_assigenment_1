@@ -99,3 +99,6 @@ sns.heatmap(df[FEATURES].corr(), annot=True, cmap="coolwarm", fmt=".2f")
 plt.title("Correlation Between Pump Measurements")
 plt.tight_layout()
 plt.show()
+# ============================================================
+# PART 3. SPLIT INTO TRAINING AND TEST DATA
+# ============================================================
