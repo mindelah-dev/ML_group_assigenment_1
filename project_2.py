@@ -85,3 +85,6 @@ print("\nSaved dataset to pump_condition_dataset.csv")
 plt.figure(figsize=(9, 5))
 sns.scatterplot(data=df, x="Vibration_mm_s", y="Temperature_C",
                 hue="Condition", hue_order=CLASS_NAMES, s=65)
+plt.title("Pump Vibration vs Temperature by Condition")
+plt.tight_layout()
+plt.show()
