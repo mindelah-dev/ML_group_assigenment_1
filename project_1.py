@@ -207,5 +207,13 @@ naive_bayes_model = Pipeline([
 ])
 
 
+# Decision Tree.
+decision_tree_model = DecisionTreeClassifier(
+    max_depth=3,
+    random_state=42,
+)
+
+
+
 
 
