@@ -200,7 +200,11 @@ svm_model = Pipeline([
 ])
 
 
-
+# Gaussian Naive Bayes.
+naive_bayes_model = Pipeline([
+    ("scaler", StandardScaler()),
+    ("classifier", GaussianNB()),
+])
 
 
 
