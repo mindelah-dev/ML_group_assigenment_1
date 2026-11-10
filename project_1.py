@@ -37,3 +37,16 @@ from sklearn.metrics import (
     ConfusionMatrixDisplay,
 )
 
+#============================================================
+# PART 1. CREATE A NEW DATASET (30 MACHINE RECORDS)
+# ============================================================
+
+
+# Columns:
+# Machine_ID, Temperature_C, Vibration_mm_s,
+# Speed_RPM, Operating_Hours, Failure_Risk
+#
+# Failure_Risk:
+# 0 = Normal
+# 1 = Failure risk
+
