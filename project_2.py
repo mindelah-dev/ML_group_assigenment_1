@@ -140,3 +140,10 @@ models = {
 # ============================================================
 # PART 5. TRAIN AND EVALUATE EACH MODEL
 # ============================================================
+
+def fault_score(metric, y_true, y_pred):
+    """Return a precision/recall score for the Fault class only."""
+    return metric(y_true, y_pred, labels=["Fault"], average=None, zero_division=0)[0]
+
+
+results = {}
