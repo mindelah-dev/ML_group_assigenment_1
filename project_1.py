@@ -303,3 +303,9 @@ print("\n" + "=" * 65)
 print("MODEL COMPARISON")
 print("=" * 65)
 print(results_df.round(3))
+# Compare accuracy, precision, recall, and F1-score.
+results_df.plot(
+    kind="bar",
+    figsize=(11, 6),
+    ylim=(0, 1.05),
+)
