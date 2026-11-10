@@ -16,3 +16,8 @@ IMPORTANT:
 - The values are NOT real industrial measurements.
 - The predictions are NOT a real machine safety or maintenance diagnosis.
 """
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import seaborn as sns
+
