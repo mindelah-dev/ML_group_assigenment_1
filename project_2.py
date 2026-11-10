@@ -6,3 +6,7 @@ Goal     : classify each pump observation as Normal, Warning or Fault.
 Features : vibration (mm/s), RPM, temperature (C), pressure (bar), operating hours.
 Models   : SVM, Gaussian Naive Bayes, Decision Tree, Random Forest, AdaBoost.
 Priority : Fault recall first, then macro F1 and the confusion matrix.
+
+NOTE: the data are synthetic (illustrative only), not real pump measurements.
+Predictions should support, not replace, engineering inspection.
+"""
