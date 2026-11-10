@@ -379,3 +379,4 @@ for name, model in models.items():
         label = "Failure risk"
     else:
         label = "Normal"
+ print(f"{name:15s} prediction: {label}")
