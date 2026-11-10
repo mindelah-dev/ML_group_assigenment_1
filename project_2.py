@@ -76,3 +76,6 @@ print(df.head(10).round(2).to_string(index=False))
 print("\nDataset shape:", df.shape)
 print("\nClass distribution:")
 print(df["Condition"].value_counts())
+
+df.to_csv("pump_condition_dataset.csv", index=False)
+print("\nSaved dataset to pump_condition_dataset.csv")
