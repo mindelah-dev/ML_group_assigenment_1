@@ -319,3 +319,8 @@ plt.show()
  ============================================================
 # PART 7. FEATURE IMPORTANCE AND DECISION TREE
 # ============================================================
+
+tree_models = {
+    "Decision Tree": decision_tree_model,
+    "Random Forest": random_forest_model,
+}
