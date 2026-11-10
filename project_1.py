@@ -274,3 +274,9 @@ for model_name, model in models.items():
     print(f"F1-score : {f1:.3f}")
  print("\nCLASSIFICATION REPORT")
     print(
+  y_pred,
+            labels=[0, 1],
+            target_names=["Normal", "Failure risk"],
+            zero_division=0,
+        )
+    )
