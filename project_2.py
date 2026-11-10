@@ -106,3 +106,6 @@ plt.show()
 X = df[FEATURES]
 y = df["Condition"]
 # stratify=y keeps the same Normal/Warning/Fault ratio in both sets.
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.20, random_state=RANDOM_STATE, stratify=y
+)
