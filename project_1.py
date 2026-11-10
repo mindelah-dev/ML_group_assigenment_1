@@ -333,3 +333,11 @@ for name, model in tree_models.items():
     ).sort_values(ascending=False)
  print(f"\n{name} - FEATURE IMPORTANCE")
     print(importance.round(3))
+
+    plt.figure(figsize=(7, 4))
+    plt.barh(importance.index, importance.values)
+    plt.title(f"{name}: Feature Importance")
+    plt.xlabel("Importance")
+    plt.ylabel("Engineering Feature")
+    plt.tight_layout()
+    plt.show()
