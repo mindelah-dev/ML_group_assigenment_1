@@ -136,3 +136,7 @@ models = {
         n_estimators=50, learning_rate=0.5, random_state=RANDOM_STATE,
     ),
 }
+
+# ============================================================
+# PART 5. TRAIN AND EVALUATE EACH MODEL
+# ============================================================
