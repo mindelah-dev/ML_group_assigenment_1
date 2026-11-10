@@ -146,4 +146,14 @@ sns.scatterplot(
 )
 
 
+plt.title("Machine Temperature vs. Vibration")
+plt.xlabel("Temperature (°C)")
+plt.ylabel("Vibration (mm/s)")
+plt.legend(title="0 = Normal, 1 = Failure risk")
+plt.tight_layout()
+plt.show()
+
+
+
+
 
