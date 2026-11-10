@@ -10,3 +10,8 @@ Priority : Fault recall first, then macro F1 and the confusion matrix.
 NOTE: the data are synthetic (illustrative only), not real pump measurements.
 Predictions should support, not replace, engineering inspection.
 """
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
