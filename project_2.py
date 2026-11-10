@@ -34,3 +34,4 @@ sns.set_theme(style="whitegrid")
 ============================================================
 # PART 1. CREATE THE DATASET (300 records, 100 per condition)
 # ============================================================
+# For each condition: (mean, standard deviation) of every feature.
