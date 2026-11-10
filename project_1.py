@@ -331,3 +331,5 @@ for name, model in tree_models.items():
         model.feature_importances_,
         index=feature_cols,
     ).sort_values(ascending=False)
+ print(f"\n{name} - FEATURE IMPORTANCE")
+    print(importance.round(3))
