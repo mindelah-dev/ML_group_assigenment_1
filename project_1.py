@@ -309,3 +309,10 @@ results_df.plot(
     figsize=(11, 6),
     ylim=(0, 1.05),
 )
+plt.title("Comparison of Five Supervised Learning Algorithms")
+plt.ylabel("Score")
+plt.xlabel("Algorithm")
+plt.xticks(rotation=20)
+plt.legend(loc="lower right")
+plt.tight_layout()
+plt.show()
