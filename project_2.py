@@ -224,3 +224,21 @@ plt.show()
 # ============================================================
 # PART 8. PREDICT A NEW PUMP
 # ============================================================
+
+new_pump = pd.DataFrame([{
+    "Vibration_mm_s": 5.2, "RPM": 1360, "Temperature_C": 78,
+    "Pressure_bar": 4.0, "Operating_Hours": 5200,
+}])
+
+print("\nNEW PUMP OBSERVATION")
+print(new_pump.to_string(index=False))
+print("\nPREDICTIONS FROM THE FIVE ALGORITHMS")
+for name, model in models.items():
+    print(f"{name:22s}: {model.predict(new_pump)[0]}")
+
+
+
+
+# ============================================================
+# PART 9. FINAL SUMMARY
+# ============================================================
