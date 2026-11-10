@@ -134,4 +134,16 @@ sns.set_theme(style="whitegrid")
 
 
 
+# Scatter plot: temperature compared with vibration.
+plt.figure(figsize=(8, 5))
+sns.scatterplot(
+    data=df,
+    x="Temperature_C",
+    y="Vibration_mm_s",
+    hue="Failure_Risk",
+    style="Failure_Risk",
+    s=100,
+)
+
+
 
