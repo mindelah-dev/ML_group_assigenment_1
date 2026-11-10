@@ -291,3 +291,6 @@ for model_name, model in models.items():
         colorbar=False,
         ax=ax,
     ) 
+ ax.set_title(f"{model_name}: Confusion Matrix")
+    plt.tight_layout()
+    plt.show()
