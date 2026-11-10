@@ -355,3 +355,6 @@ plot_tree(
 plt.title("Decision Tree Learned from the Training Records")
 plt.tight_layout()
 plt.show()
+ ============================================================
+# PART 8. TEST A NEW MACHINE OBSERVATION
+# ============================================================
