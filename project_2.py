@@ -200,3 +200,17 @@ plt.show()
 # PART 7. FEATURE IMPORTANCE AND THE DECISION TREE
 # ============================================================
 
+for name in ["Decision Tree", "Random Forest"]:
+    importance = pd.Series(models[name].feature_importances_, index=FEATURES)
+    importance = importance.sort_values(ascending=False)
+
+    print(f"\n{name} feature importance:")
+    print(importance.round(3))
+
+    plt.figure(figsize=(8, 5))
+    importance.sort_values().plot(kind="barh")
+    plt.title(f"{name} - Pump Feature Importance")
+    plt.xlabel("Importance")
+    plt.tight_layout()
+    plt.show()
+
