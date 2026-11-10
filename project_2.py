@@ -30,3 +30,4 @@ from sklearn.metrics import (
 RANDOM_STATE = 42
 CLASS_NAMES = ["Normal", "Warning", "Fault"]
 FEATURES = ["Vibration_mm_s", "RPM", "Temperature_C", "Pressure_bar", "Operating_Hours"]
+sns.set_theme(style="whitegrid")
