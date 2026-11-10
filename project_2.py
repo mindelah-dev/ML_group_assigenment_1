@@ -88,3 +88,9 @@ sns.scatterplot(data=df, x="Vibration_mm_s", y="Temperature_C",
 plt.title("Pump Vibration vs Temperature by Condition")
 plt.tight_layout()
 plt.show()
+
+plt.figure(figsize=(8, 5))
+sns.countplot(data=df, x="Condition", order=CLASS_NAMES)
+plt.title("Number of Records in Each Pump Condition")
+plt.tight_layout()
+plt.show()
