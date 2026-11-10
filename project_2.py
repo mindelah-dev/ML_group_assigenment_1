@@ -50,3 +50,7 @@ PROFILES = {
     },
 }
 # Smallest physically sensible value for each feature (avoids negative readings).
+MINIMUMS = {
+    "Vibration_mm_s": 0.1, "RPM": 500, "Temperature_C": 10,
+    "Pressure_bar": 0.1, "Operating_Hours": 0,
+}
