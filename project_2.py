@@ -116,3 +116,23 @@ print("Testing records :", len(X_test))
 # ============================================================
 # PART 4. DEFINE THE FIVE CLASSIFIERS
 # ============================================================
+
+# Pipelines fit the scaler on training data only, which prevents data leakage.
+models = {
+    "SVM": Pipeline([
+        ("scaler", StandardScaler()),
+        ("classifier", SVC(kernel="rbf", C=1.0, gamma="scale")),
+    ]),
+    "Gaussian Naive Bayes": Pipeline([
+        ("scaler", StandardScaler()),
+        ("classifier", GaussianNB()),
+    ]),
+    "Decision Tree": DecisionTreeClassifier(max_depth=5, random_state=RANDOM_STATE),
+    "Random Forest": RandomForestClassifier(
+        n_estimators=100, max_depth=5, random_state=RANDOM_STATE
+    ),
+    "AdaBoost": AdaBoostClassifier(
+        estimator=DecisionTreeClassifier(max_depth=1, random_state=RANDOM_STATE),
+        n_estimators=50, learning_rate=0.5, random_state=RANDOM_STATE,
+    ),
+}
