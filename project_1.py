@@ -236,5 +236,10 @@ models = {
     "Random Forest": random_forest_model,
     "AdaBoost": adaboost_model,
 }
+# ============================================================
+# PART 5. TRAIN, PREDICT, EVALUATE, AND VISUALIZE EACH MODEL
+# ============================================================
 
+results = []
+predictions = {}
 
