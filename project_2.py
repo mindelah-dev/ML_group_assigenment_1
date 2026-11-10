@@ -112,3 +112,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 print("\nTraining records:", len(X_train))
 print("Testing records :", len(X_test))
+
+# ============================================================
+# PART 4. DEFINE THE FIVE CLASSIFIERS
+# ============================================================
