@@ -40,3 +40,7 @@ PROFILES = {
         "Vibration_mm_s": (1.5, 0.45), "RPM": (1480, 35), "Temperature_C": (55, 5),
         "Pressure_bar": (5.0, 0.25), "Operating_Hours": (1800, 700),
     },
+   "Warning": {
+        "Vibration_mm_s": (4.0, 0.65), "RPM": (1400, 45), "Temperature_C": (72, 6),
+        "Pressure_bar": (4.3, 0.30), "Operating_Hours": (4500, 900),
+    },
