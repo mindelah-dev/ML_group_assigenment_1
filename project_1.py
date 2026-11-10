@@ -294,3 +294,6 @@ for model_name, model in models.items():
  ax.set_title(f"{model_name}: Confusion Matrix")
     plt.tight_layout()
     plt.show()
+# ============================================================
+# PART 6. COMPARE THE FIVE ALGORITHMS
+# ============================================================
