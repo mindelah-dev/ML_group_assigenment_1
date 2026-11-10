@@ -71,3 +71,8 @@ def create_dataset(records_per_class=100):
 
 
 df = create_dataset()
+print("\nPUMP CONDITION DATASET (first 10 rows)")
+print(df.head(10).round(2).to_string(index=False))
+print("\nDataset shape:", df.shape)
+print("\nClass distribution:")
+print(df["Condition"].value_counts())
