@@ -285,4 +285,9 @@ for model_name, model in models.items():
     ConfusionMatrixDisplay.from_predictions(
         y_test,
         y_pred,
-   
+   labels=[0, 1],
+        display_labels=["Normal", "Failure risk"],
+        cmap="Blues",
+        colorbar=False,
+        ax=ax,
+    ) 
