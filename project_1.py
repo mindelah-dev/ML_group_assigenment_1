@@ -110,3 +110,12 @@ print(
     .sort_index()
     .rename(index={0: "Normal", 1: "Failure risk"})
 )
+
+
+# Separate input features (X) from the answer/target (y).
+feature_cols = [
+    "Temperature_C",
+    "Vibration_mm_s",
+    "Speed_RPM",
+    "Operating_Hours",
+]
