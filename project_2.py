@@ -182,3 +182,17 @@ for name, model in models.items():
 # ============================================================
 # PART 6. COMPARE THE FIVE ALGORITHMS
 # ============================================================
+
+results_df = pd.DataFrame(results).T
+print("\nMODEL COMPARISON")
+print(results_df.round(3))
+
+results_df.plot(kind="bar", figsize=(12, 6), ylim=(0, 1.05))
+plt.title("Comparison of Five Pump Condition Classifiers")
+plt.ylabel("Evaluation score")
+plt.xlabel("Algorithm")
+plt.xticks(rotation=20)
+plt.legend(loc="lower right")
+plt.tight_layout()
+plt.show()
+
