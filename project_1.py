@@ -386,3 +386,8 @@ for name, model in models.items():
 print("\n" + "=" * 65)
 print("END OF PRACTICAL CASE STUDY")
 print("=" * 65)
+
+print(
+    "\nReminder: This is a small synthetic educational dataset. "
+    "It is not suitable for making real industrial maintenance decisions."
+)
