@@ -229,6 +229,12 @@ adaboost_model = AdaBoostClassifier(
     learning_rate=0.5,
     random_state=42,
 )
-
+models = {
+    "SVM": svm_model,
+    "Naive Bayes": naive_bayes_model,
+    "Decision Tree": decision_tree_model,
+    "Random Forest": random_forest_model,
+    "AdaBoost": adaboost_model,
+}
 
 
