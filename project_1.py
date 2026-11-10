@@ -243,3 +243,8 @@ models = {
 results = []
 predictions = {}
 
+for model_name, model in models.items():
+
+    print("\n" + "=" * 65)
+    print(model_name.upper())
+    print("=" * 65)
