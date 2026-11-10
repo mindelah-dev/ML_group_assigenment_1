@@ -253,3 +253,6 @@ for model_name, model in models.items():
     print("=" * 65)
  # Train the model using the training data.
     model.fit(X_train, y_train)
+ # Predict the labels for the testing data.
+    y_pred = model.predict(X_test)
+    predictions[model_name] = y_pred
