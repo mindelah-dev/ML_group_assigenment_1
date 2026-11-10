@@ -119,3 +119,7 @@ feature_cols = [
     "Speed_RPM",
     "Operating_Hours",
 ]
+X = df[feature_cols]
+y = df["Failure_Risk"]
+
+
