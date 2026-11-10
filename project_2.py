@@ -214,3 +214,13 @@ for name in ["Decision Tree", "Random Forest"]:
     plt.tight_layout()
     plt.show()
 
+plt.figure(figsize=(20, 10))
+plot_tree(models["Decision Tree"], feature_names=FEATURES, class_names=CLASS_NAMES,
+          filled=True, rounded=True, fontsize=8)
+plt.title("Decision Tree for Pump Condition Classification")
+plt.tight_layout()
+plt.show()
+
+# ============================================================
+# PART 8. PREDICT A NEW PUMP
+# ============================================================
