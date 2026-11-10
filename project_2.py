@@ -26,3 +26,7 @@ from sklearn.metrics import (
     accuracy_score, precision_score, recall_score, f1_score,
     classification_report, confusion_matrix, ConfusionMatrixDisplay,
 )
+
+RANDOM_STATE = 42
+CLASS_NAMES = ["Normal", "Warning", "Fault"]
+FEATURES = ["Vibration_mm_s", "RPM", "Temperature_C", "Pressure_bar", "Operating_Hours"]
