@@ -35,3 +35,8 @@ sns.set_theme(style="whitegrid")
 # PART 1. CREATE THE DATASET (300 records, 100 per condition)
 # ============================================================
 # For each condition: (mean, standard deviation) of every feature.
+PROFILES = {
+    "Normal": {
+        "Vibration_mm_s": (1.5, 0.45), "RPM": (1480, 35), "Temperature_C": (55, 5),
+        "Pressure_bar": (5.0, 0.25), "Operating_Hours": (1800, 700),
+    },
