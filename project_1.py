@@ -84,3 +84,29 @@ data = [
     [29, 84, 5.3, 1325, 6000, 1],
     [30, 92, 6.5, 1270, 7500, 1],
 ]
+columns = [
+    "Machine_ID",
+    "Temperature_C",
+    "Vibration_mm_s",
+    "Speed_RPM",
+    "Operating_Hours",
+    "Failure_Risk",
+]
+
+
+df = pd.DataFrame(data, columns=columns)
+
+
+print("\n" + "=" * 65)
+print("DATASET: 30 MACHINE RECORDS")
+print("=" * 65)
+print(df.to_string(index=False))
+
+
+print("\nCLASS DISTRIBUTION")
+print(
+    df["Failure_Risk"]
+    .value_counts()
+    .sort_index()
+    .rename(index={0: "Normal", 1: "Failure risk"})
+)
