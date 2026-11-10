@@ -358,3 +358,11 @@ plt.show()
  ============================================================
 # PART 8. TEST A NEW MACHINE OBSERVATION
 # ============================================================
+ This is a new example, not one of the original 30 records.
+# Its values are invented for this educational demonstration.
+new_machine = pd.DataFrame([{
+    "Temperature_C": 75,
+    "Vibration_mm_s": 3.9,
+    "Speed_RPM": 1380,
+    "Operating_Hours": 4600,
+}])
