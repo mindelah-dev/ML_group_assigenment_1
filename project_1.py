@@ -218,7 +218,13 @@ random_forest_model = RandomForestClassifier(
     max_depth=3,
     random_state=42,
 )
-
+# AdaBoost.
+# The estimator argument is used by modern versions of scikit-learn.
+adaboost_model = AdaBoostClassifier(
+    estimator=DecisionTreeClassifier(
+        max_depth=1,
+        random_state=42,
+    ),
 
 
 
