@@ -130,3 +130,8 @@ y = df["Failure_Risk"]
 
 
 
+sns.set_theme(style="whitegrid")
+
+
+
+
