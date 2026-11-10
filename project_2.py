@@ -169,3 +169,12 @@ for name, model in models.items():
     print("\nClassification report:")
     print(classification_report(y_test, y_pred, labels=CLASS_NAMES,
                                 target_names=CLASS_NAMES, zero_division=0))
+ # 3x3 confusion matrix (rows = actual, columns = predicted).
+    cm = confusion_matrix(y_test, y_pred, labels=CLASS_NAMES)
+    fig, ax = plt.subplots(figsize=(6, 5))
+    ConfusionMatrixDisplay(cm, display_labels=CLASS_NAMES).plot(
+        ax=ax, cmap="Blues", colorbar=False, values_format="d"
+    )
+    ax.set_title(f"{name} - Confusion Matrix")
+    plt.tight_layout()
+    plt.show()
