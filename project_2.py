@@ -59,3 +59,10 @@ def create_dataset(records_per_class=100):
     """Generate synthetic pump records for the three conditions."""
     rng = np.random.default_rng(RANDOM_STATE)
     rows = []
+    for condition, profile in PROFILES.items():
+        for _ in range(records_per_class):
+            row = {"Pump_ID": len(rows) + 1}
+            for feature, (mean, sd) in profile.items():
+                row[feature] = max(MINIMUMS[feature], rng.normal(mean, sd))
+            row["Condition"] = condition
+            rows.append(row)
