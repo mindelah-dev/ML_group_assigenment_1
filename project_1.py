@@ -225,7 +225,10 @@ adaboost_model = AdaBoostClassifier(
         max_depth=1,
         random_state=42,
     ),
-
+    n_estimators=50,
+    learning_rate=0.5,
+    random_state=42,
+)
 
 
 
