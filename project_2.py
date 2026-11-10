@@ -79,3 +79,6 @@ print(df["Condition"].value_counts())
 
 df.to_csv("pump_condition_dataset.csv", index=False)
 print("\nSaved dataset to pump_condition_dataset.csv")
+# ============================================================
+# PART 2. EXPLORE THE DATA
+# ============================================================
