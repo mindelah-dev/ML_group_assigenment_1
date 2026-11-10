@@ -297,3 +297,9 @@ for model_name, model in models.items():
 # ============================================================
 # PART 6. COMPARE THE FIVE ALGORITHMS
 # ============================================================
+results_df = pd.DataFrame(results).set_index("Algorithm")
+
+print("\n" + "=" * 65)
+print("MODEL COMPARISON")
+print("=" * 65)
+print(results_df.round(3))
