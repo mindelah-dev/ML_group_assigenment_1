@@ -44,3 +44,7 @@ PROFILES = {
         "Vibration_mm_s": (4.0, 0.65), "RPM": (1400, 45), "Temperature_C": (72, 6),
         "Pressure_bar": (4.3, 0.30), "Operating_Hours": (4500, 900),
     },
+    "Fault": {
+        "Vibration_mm_s": (7.0, 0.80), "RPM": (1280, 55), "Temperature_C": (90, 6),
+        "Pressure_bar": (3.4, 0.35), "Operating_Hours": (7500, 1000),
+    },
