@@ -155,5 +155,20 @@ plt.show()
 
 
 
+# Correlation heatmap.
+plt.figure(figsize=(8, 5))
+sns.heatmap(
+    df[feature_cols + ["Failure_Risk"]].corr(),
+    annot=True,
+    cmap="coolwarm",
+    fmt=".2f",
+)
+plt.title("Correlation Matrix of Engineering Variables")
+plt.tight_layout()
+plt.show()
+
+
+
+
 
 
