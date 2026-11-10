@@ -324,3 +324,10 @@ tree_models = {
     "Decision Tree": decision_tree_model,
     "Random Forest": random_forest_model,
 }
+
+for name, model in tree_models.items():
+
+    importance = pd.Series(
+        model.feature_importances_,
+        index=feature_cols,
+    ).sort_values(ascending=False)
