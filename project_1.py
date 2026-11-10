@@ -256,3 +256,8 @@ for model_name, model in models.items():
  # Predict the labels for the testing data.
     y_pred = model.predict(X_test)
     predictions[model_name] = y_pred
+ # Calculate evaluation measurements.
+    accuracy = accuracy_score(y_test, y_pred)
+    precision = precision_score(y_test, y_pred, zero_division=0)
+    recall = recall_score(y_test, y_pred, zero_division=0)
+    f1 = f1_score(y_test, y_pred, zero_division=0)
