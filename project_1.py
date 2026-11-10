@@ -366,3 +366,7 @@ new_machine = pd.DataFrame([{
     "Speed_RPM": 1380,
     "Operating_Hours": 4600,
 }])
+print("\n" + "=" * 65)
+print("NEW MACHINE OBSERVATION")
+print("=" * 65)
+print(new_machine.to_string(index=False))
