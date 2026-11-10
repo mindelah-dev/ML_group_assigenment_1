@@ -352,3 +352,6 @@ plot_tree(
     rounded=True,
     fontsize=9,
 )
+plt.title("Decision Tree Learned from the Training Records")
+plt.tight_layout()
+plt.show()
