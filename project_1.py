@@ -212,6 +212,12 @@ decision_tree_model = DecisionTreeClassifier(
     max_depth=3,
     random_state=42,
 )
+# Random Forest.
+random_forest_model = RandomForestClassifier(
+    n_estimators=100,
+    max_depth=3,
+    random_state=42,
+)
 
 
 
