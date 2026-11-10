@@ -280,3 +280,9 @@ for model_name, model in models.items():
             zero_division=0,
         )
     )
+ # Draw a confusion matrix for this model.
+    fig, ax = plt.subplots(figsize=(5, 4))
+    ConfusionMatrixDisplay.from_predictions(
+        y_test,
+        y_pred,
+   
